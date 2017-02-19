@@ -28,5 +28,6 @@ add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 	// Navigation Menus
 register_nav_menus(array(
 	'primary' => __( 'Primary Menu'),
+	'right_sidebar' => __( 'Right Sidebar Menu'),
 	'footer' => __( 'Footer Menu'),
 ));
