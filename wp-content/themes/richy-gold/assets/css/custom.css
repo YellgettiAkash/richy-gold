@@ -1,0 +1,121 @@
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+section {
+padding: 100px 0;
+}
+
+header {
+position: relative;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+/*-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+*/-o-background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url('../images/bg-img.png');
+text-align: center;
+color: white;
+}
+header .header-content {
+position: relative;
+text-align: center;
+padding: 100px 15px 100px;
+width: 100%;
+}
+
+@media (min-width: 768px) {
+header {
+min-height: 100%;
+}
+header .header-content {
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+padding: 0 50px;
+}
+header .header-content .header-content-inner {
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+::-moz-selection {
+color: white;
+text-shadow: none;
+background: #222222;
+}
+::selection {
+color: white;
+text-shadow: none;
+background: #222222;
+}
+img::selection {
+color: white;
+background: transparent;
+}
+img::-moz-selection {
+color: white;
+background: transparent;
+}
+
+.img-center {
+margin:30px auto;
+}
+
+.about-heading h2, .codes-heading h2, .gallery-heading h2, .blog-heading h2, .contact-heading h2 {
+    color: #202020;
+    font-size: 3em;
+    font-family: cambria, sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+.information-heading p, .popular-heading p, .about-heading p, .codes-heading p, .gallery-heading p, .blog-heading p, .contact-heading p {
+	font-size: 1em;
+    margin: 0.5em auto 0.5em;
+    width: 100%; 
+    text-align: left;
+}
+
+h2,h3, .h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #009641;
+}
+
+.information {
+     padding: 0em 0 4em 0; 
+}
+
+.banner {
+    background: url(../images/2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    height: 400px;
+    padding: 3em 0 3em;
+}
+.information-grid-info p, .team-grid p {
+    font-size: .875em;
+    color: #000;
+    margin: 1em 0 0 0;
+    line-height: 1.8em;
+}
+
+.blog-left-right p {
+    font-size: 1.2em;
+    /*font-style: italic;*/
+     text-justify: inter-word;
+    font-family: serif;
+    margin: 0.5em 0;
+    color: #353535;
+    line-height: 1.8em;
+}
