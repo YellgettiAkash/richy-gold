@@ -9,10 +9,36 @@
 <body>
 	<!-- header -->
 	<div class="header">
+	<div class="top-header">
+			<div class="container">
+				<div class="top-header-info">
+					<div class="top-header-left wow fadeInLeft animated" data-wow-delay=".5s">
+						<p>Contact Us :- 07030707732 / 014541765 </p>
+					</div>
+					<div class="top-header-right wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="top-header-right-info">
+							<ul>
+								<li><a href="#">Login</a></li>
+								<!-- <li><a href="#">Sign up</a></li> -->
+							</ul>
+						</div>
+						<div class="top-header-right-info">
+							<ul>
+								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="twitter facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="twitter google" href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
 		<div class="bottom-header">
 			<div class="container">
 				<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-					<h1><img src="<?= get_template_directory_uri();  ?>/asset/images/rgm.jpg" alt="" /></a></h1>
+					<h1><img src="<?= get_template_directory_uri();  ?>/assets/images/rgm.jpg" class="img-responsive" alt="" /></a></h1>
 				</div>
 				<div class="top-nav wow fadeInRight animated" data-wow-delay=".5s">
 					<nav class="navbar navbar-default">
