@@ -6,6 +6,10 @@ Template Post Type: post, page, event
 // Page code here...
 get_header(); ?>
 	<div class="container">
+		<div class="col-sm-3">
+	<?php get_sidebar(); ?>	
+</div>
+
 <div class="col-sm-9">
 	
 
@@ -36,9 +40,6 @@ get_header(); ?>
     'prev_text' => __( 'previous', 'textdomain' ),
     'next_text' => __( 'next', 'textdomain' ),
 ) ); ?>
-</div>
-<div class="col-sm-3">
-	<?php get_sidebar(); ?>	
 </div>
 
 	</div>
