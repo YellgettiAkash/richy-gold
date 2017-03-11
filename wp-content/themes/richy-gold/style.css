@@ -26,3 +26,6 @@ Version: 0.1
 .cat_akash ul li{
 	margin-top:5px;
 }
+.textwidget p{
+	text-align: justify;
+}
