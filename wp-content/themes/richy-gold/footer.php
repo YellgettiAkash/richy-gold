@@ -1,3 +1,4 @@
+<?php if (get_site_url().'/' != get_permalink()) { ?>
 <!-- footer -->
 <div class="footer">
    <div class="container">
@@ -47,6 +48,7 @@
       </div>
    </div>
 </div>
+<?php } ?>
 <!-- //footer -->
 </body>	
 </html>

@@ -2,6 +2,7 @@
 
 function css_resources() {
 	
+	wp_enqueue_style('assets/css/custom.css',get_template_directory_uri() .'/assets/css/custom.css');
 	wp_enqueue_style('assets/css/bootstrap.css',get_template_directory_uri() .'/assets/css/bootstrap.css');
 	wp_enqueue_style('assets/css/style.css',get_template_directory_uri() .'/assets/css/style.css');
 	wp_enqueue_style('style', get_stylesheet_uri());
