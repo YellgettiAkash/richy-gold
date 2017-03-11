@@ -43,8 +43,8 @@ function widgets_init() {
 		'class' => '',
 		'before_widget' => '<div class="col-sm-12">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
 	) );
 
 }

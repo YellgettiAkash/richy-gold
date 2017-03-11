@@ -7,6 +7,7 @@
    
    get_header(); ?>
 <div class="container">
+   <div class="row">
    <div class="col-sm-8">
       <?php
          if (have_posts()) :
@@ -54,5 +55,6 @@
          </div>
       </div>
    </div>
+</div>
 </div>
 <?php get_footer(); ?>
