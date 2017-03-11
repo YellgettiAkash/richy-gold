@@ -4,3 +4,16 @@ Theme URI: https://goldmooreng.com
 Author: Akash Yellgetti
 Version: 0.1
 */
+#nav .sub-menu{
+	display: none;
+}
+.post {
+	background: #ffffff;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.post-right-sidebar {
+	background: #ffffff;
+    
+}
