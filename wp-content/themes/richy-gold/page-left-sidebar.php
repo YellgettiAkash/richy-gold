@@ -49,7 +49,8 @@
          ) ); ?>
    </div>
    <div class="col-md-4">
-      <div class="post-right-sidebar">
+       <div class="post-right-sidebar wow fadeInUp animated" data-wow-delay=".5s">
+      
          <div class="row">
             <?php dynamic_sidebar( 'sidebar-widgets' ); ?>
          </div>

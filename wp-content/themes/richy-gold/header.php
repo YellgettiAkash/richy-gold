@@ -8,6 +8,14 @@
 </head>
 <body>
 <?php get_site_url()."===".home_url()."====".get_permalink(); ?>
+<?php 
+$url = explode('/', get_permalink());
+$web = explode('-',$url[4]);
+// print_r($web);
+
+
+?>
+
 <?php '<pre>'.print_r(get_bloginfo(),true).'</pre>'; ?>
 <?php if (get_site_url().'/' != get_permalink()) { ?>
 	<!-- header -->
@@ -54,7 +62,7 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<?php
 								$args =[
-								    'theme_location'  =>  'primary',
+								    'theme_location'  =>  $web[0],
 								    'container'       => '',
 								    'container_class' => '',
 								    'menu_class'      => 'nav navbar-nav',
