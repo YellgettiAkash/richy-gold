@@ -1,5 +1,6 @@
-
-	<?php get_header(); ?>
+<?php 
+ini_set('display_errors',1);
+get_header(); ?>
 	<div class="container">
 	<?php
 	if (have_posts()) :

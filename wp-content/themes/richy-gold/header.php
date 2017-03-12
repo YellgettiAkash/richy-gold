@@ -10,7 +10,7 @@
 <?php get_site_url()."===".home_url()."====".get_permalink(); ?>
 <?php 
 $url = explode('/', get_permalink());
-$web = explode('-',$url[4]);
+$web = explode('-',$url[3]);
 // print_r($web);
 
 
