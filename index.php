@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 ini_set('display_errors',1);
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads

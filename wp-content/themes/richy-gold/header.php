@@ -7,16 +7,37 @@
 		<?php wp_head(); ?>
 </head>
 <body>
+
+
+<?php '<pre>'.print_r(get_bloginfo(),true).'</pre>'; ?>
+
 <?php get_site_url()."===".home_url()."====".get_permalink(); ?>
 <?php 
+
 $url = explode('/', get_permalink());
 $web = explode('-',$url[3]);
-// print_r($web);
+
+if(!isset($_SESSION['menu'])){
+	$_SESSION['menu'] = $menu = 'goldmoore';
+}
+
+if (strpos(get_permalink(), 'richygold') !== false) {
+	$_SESSION['menu'] = $menu = 'richygold';
+}
+
+if (strpos(get_permalink(), 'goldmoore') !== false) {
+	$_SESSION['menu'] = $_SESSION['menu'] = $menu = 'goldmoore';
+}
+
+if(isset($_SESSION['menu']) && strpos(get_permalink(), 'goldmoore') !== false && strpos(get_permalink(), 'richygold') !== false ){
+	 $menu = $_SESSION['menu'];
+}
+
+ "<pre>".print_r($_SESSION,true)."</pre>";
+
 
 
 ?>
-
-<?php '<pre>'.print_r(get_bloginfo(),true).'</pre>'; ?>
 <?php if (get_site_url().'/' != get_permalink()) { ?>
 	<!-- header -->
 	<div class="header">
@@ -62,7 +83,7 @@ $web = explode('-',$url[3]);
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<?php
 								$args =[
-								    'theme_location'  =>  $web[0],
+								    'theme_location'  =>  $menu,
 								    'container'       => '',
 								    'container_class' => '',
 								    'menu_class'      => 'nav navbar-nav',
