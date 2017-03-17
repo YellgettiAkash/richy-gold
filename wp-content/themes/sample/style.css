@@ -4,12 +4,23 @@ Theme URI: https://goldmooreng.com
 Author: Akash Yellgetti
 Version: 0.1
 */
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
-}
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-}
+ .sub-menu{
+      display: none;
+      padding-left: 15px; 
+   }
+   #nav li:hover .sub-menu{
+      background-color:inherit;
+      display: block;
+      position: absolute;
+      list-style-type: none;
+      min-width: 150px;
+      background-color: #f0f0f0
+   }
+
+   #nav li:hover .sub-menu li a {
+      color: black;
+      padding: 12px 5px;
+      text-decoration: none;
+      display: block;
+    }
+   #nav li:hover .sub-menu li a:hover {background-color: #f1f1f1}

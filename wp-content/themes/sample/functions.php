@@ -2,9 +2,9 @@
 
 function css_resources() {
 	
-	// wp_enqueue_style('style', get_stylesheet_uri());
 	wp_enqueue_style('assets/css/bootstrap.min.css',get_template_directory_uri() .'/assets/css/bootstrap.min.css');
 	wp_enqueue_style('assets/css/bootstrap.css',get_template_directory_uri() .'/assets/css/bootstrap.css');
+	wp_enqueue_style('style', get_stylesheet_uri());
 	
 }
 
