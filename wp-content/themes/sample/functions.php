@@ -19,6 +19,50 @@ function wpt_theme_js() {
 add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 
 
+function widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-widgets',
+		'class' => '',
+		'before_widget' => '<div class="col-sm-12">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Footer -3',
+		'id'            => 'footer-widgets-3',
+		'class' => 'abc',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer-2',
+		'id'            => 'footer-widgets-2',
+		'class' => 'abc',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer-1',
+		'id'            => 'footer-widgets-1',
+		'class' => 'abc',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+
+add_action( 'widgets_init', 'widgets_init' );
+
 	// Navigation Menus
 register_nav_menus(array(
 	'primary' => __( 'Primary Menu'),
